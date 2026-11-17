@@ -8,7 +8,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
-    runs-on: macos-15-intel
+    runs-on: macos-15
     timeout-minutes: 35
     env:
       DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
@@ -23,19 +23,25 @@ jobs:
           xcodebuild -version
           swift test --package-path iword-ios/Core --parallel
       - name: iPhone simulator content and learning unit tests
+        env:
+          DEVELOPER_DIR: /Applications/Xcode_26.2.app/Contents/Developer
         run: |
           set -euo pipefail
           mkdir -p release
+          xcrun simctl list runtimes
+          xcrun simctl list devices available
           xcodebuild -project iword-ios/IWord.xcodeproj -scheme IWord \
-            -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.5' \
+            -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16,OS=26.2' \
             -derivedDataPath build-simulator -resultBundlePath release/NativeTests.xcresult \
             -parallel-testing-enabled NO -maximum-test-execution-time-allowance 300 \
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO -only-testing:IWordTests test
       - name: iPhone simulator interaction tests
+        env:
+          DEVELOPER_DIR: /Applications/Xcode_26.2.app/Contents/Developer
         run: |
           set -euo pipefail
           xcodebuild -project iword-ios/IWord.xcodeproj -scheme IWord \
-            -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.5' \
+            -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16,OS=26.2' \
             -derivedDataPath build-simulator -resultBundlePath release/OfflineFlow.xcresult \
             -parallel-testing-enabled NO -maximum-test-execution-time-allowance 300 \
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO -only-testing:IWordUITests test
