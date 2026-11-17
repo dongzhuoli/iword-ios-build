@@ -1,0 +1,10 @@
+build/
+build-simulator/
+release/
+releases/
+DerivedData/
+.build/
+__pycache__/
+xcuserdata/
+*.xcuserstate
+.env

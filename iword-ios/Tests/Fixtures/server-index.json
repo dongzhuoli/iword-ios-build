@@ -1,0 +1,15 @@
+{
+  "catalogId" : "redbook-2027-required",
+  "packages" : [ {
+    "audioCount" : 0,
+    "bytes" : 972,
+    "minAppVersion" : "1.0.0",
+    "packageId" : "required-unit-1-16a53f7a2c80",
+    "revision" : "794f28e0c5b92bca5de4c1cecbe25a881073dc36a1696274e5213506aa6a8dcf",
+    "sha256" : "be309984520deffd3f3b97c7feb40c44bfb50881425abe6f4db4759e2132631e",
+    "title" : "required · Unit 1",
+    "wordCount" : 1
+  } ],
+  "releaseId" : "2f196d305b31bc1daef78befa45c13760727d7b7deeee2bceafb4c9d6e459283",
+  "schemaVersion" : 1
+}

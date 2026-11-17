@@ -1,0 +1,1 @@
+Synthetic installer fixtures. The five-word demo uses generated test tones. No textbook audio or excerpts are included. server-synthetic.zip is the original Java-generated synthetic contract fixture. Other packages cover valid, bad hash, missing usage, incompatible app version and path traversal.

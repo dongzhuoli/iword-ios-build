@@ -1,0 +1,27 @@
+[
+  {
+    "name": "delayed_easy_first_success",
+    "stability": 0,
+    "rating": "easy",
+    "hinted": false,
+    "intervalHours": 12,
+    "expectedStability": 1,
+    "expectedDelayDays": 3
+  },
+  {
+    "name": "forgot_resets_and_retries",
+    "stability": 3,
+    "rating": "forgot",
+    "hinted": false,
+    "expectedStability": 0,
+    "expectedDelayMinutes": 10
+  },
+  {
+    "name": "hinted_easy_normalizes_to_hint",
+    "stability": 3,
+    "rating": "easy",
+    "hinted": true,
+    "expectedStability": 0,
+    "expectedDelayMinutes": 240
+  }
+]

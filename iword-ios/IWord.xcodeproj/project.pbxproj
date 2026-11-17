@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+    "archiveVersion" = "1";
+    "classes" = {
+
+    };
+    "objectVersion" = "56";
+    "objects" = {
+        "000000000000000000000001" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AICoachArchive.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000002" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000001";
+        };
+        "000000000000000000000003" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AICoachBackground.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000004" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000003";
+        };
+        "000000000000000000000005" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AICoachController.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000006" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000005";
+        };
+        "000000000000000000000007" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AICoachEngine.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000008" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000007";
+        };
+        "000000000000000000000009" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AICoachKeychain.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000000A" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000009";
+        };
+        "00000000000000000000000B" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AICoachViews.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000000C" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000000B";
+        };
+        "00000000000000000000000D" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AssociationLearning.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000000E" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000000D";
+        };
+        "00000000000000000000000F" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AssociationReport.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000010" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000000F";
+        };
+        "000000000000000000000011" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AssociationViews.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000012" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000011";
+        };
+        "000000000000000000000013" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "BackupArchive.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000014" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000013";
+        };
+        "000000000000000000000015" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "ChineseSpeechCapture.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000016" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000015";
+        };
+        "000000000000000000000017" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "ContentInstaller.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000018" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000017";
+        };
+        "000000000000000000000019" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "IWordApp.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000001A" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000019";
+        };
+        "00000000000000000000001B" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "LearningHistory.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000001C" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000001B";
+        };
+        "00000000000000000000001D" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "LearningModel.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000001E" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000001D";
+        };
+        "00000000000000000000001F" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "LearningPreferences.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000020" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000001F";
+        };
+        "000000000000000000000021" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "LearningPreferencesView.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000022" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000021";
+        };
+        "000000000000000000000023" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "LearningSelection.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000024" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000023";
+        };
+        "000000000000000000000025" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "LocalAudio.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000026" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000025";
+        };
+        "000000000000000000000027" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "LocalReminder.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000028" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000027";
+        };
+        "000000000000000000000029" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "MeaningLearning.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000002A" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000029";
+        };
+        "00000000000000000000002B" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "MedleyPlan.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000002C" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000002B";
+        };
+        "00000000000000000000002D" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "MedleyPlayer.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000002E" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000002D";
+        };
+        "00000000000000000000002F" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "MedleyPreparation.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000030" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000002F";
+        };
+        "000000000000000000000031" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "MedleyViews.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000032" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000031";
+        };
+        "000000000000000000000033" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "MobileContentClient.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000034" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000033";
+        };
+        "000000000000000000000035" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "Models.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000036" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000035";
+        };
+        "000000000000000000000037" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "P3Views.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000038" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000037";
+        };
+        "000000000000000000000039" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "PracticeEngine.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000003A" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000039";
+        };
+        "00000000000000000000003B" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "PracticeModel.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000003C" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000003B";
+        };
+        "00000000000000000000003D" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "PracticeViews.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000003E" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000003D";
+        };
+        "00000000000000000000003F" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "SpokenMeaning.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000040" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000003F";
+        };
+        "000000000000000000000041" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "SpokenMeaningInput.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000042" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000041";
+        };
+        "000000000000000000000043" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "StudyReport.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000044" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000043";
+        };
+        "000000000000000000000045" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "WordFormationView.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000046" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000045";
+        };
+        "000000000000000000000047" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "folder.assetcatalog";
+            "path" = "Assets.xcassets";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000048" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "archive.zip";
+            "path" = "sample.zip";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000049" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000047";
+        };
+        "00000000000000000000004A" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000048";
+        };
+        "00000000000000000000004B" = {
+            "isa" = "PBXFileReference";
+            "explicitFileType" = "wrapper.application";
+            "path" = "IWord.app";
+            "sourceTree" = "BUILT_PRODUCTS_DIR";
+            "includeInIndex" = "0";
+        };
+        "00000000000000000000004C" = {
+            "isa" = "PBXGroup";
+            "children" = ("000000000000000000000001", "000000000000000000000003", "000000000000000000000005", "000000000000000000000007", "000000000000000000000009", "00000000000000000000000B", "00000000000000000000000D", "00000000000000000000000F", "000000000000000000000011", "000000000000000000000013", "000000000000000000000015", "000000000000000000000017", "000000000000000000000019", "00000000000000000000001B", "00000000000000000000001D", "00000000000000000000001F", "000000000000000000000021", "000000000000000000000023", "000000000000000000000025", "000000000000000000000027", "000000000000000000000029", "00000000000000000000002B", "00000000000000000000002D", "00000000000000000000002F", "000000000000000000000031", "000000000000000000000033", "000000000000000000000035", "000000000000000000000037", "000000000000000000000039", "00000000000000000000003B", "00000000000000000000003D", "00000000000000000000003F", "000000000000000000000041", "000000000000000000000043", "000000000000000000000045", "000000000000000000000047", "000000000000000000000048");
+            "path" = "IWord";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000004D" = {
+            "isa" = "PBXGroup";
+            "children" = ("00000000000000000000004B", "000000000000000000000063", "00000000000000000000007A");
+            "name" = "Products";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000004E" = {
+            "isa" = "PBXGroup";
+            "children" = ("00000000000000000000004C", "000000000000000000000079", "000000000000000000000062", "00000000000000000000004D");
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000004F" = {
+            "isa" = "XCLocalSwiftPackageReference";
+            "relativePath" = "Core";
+        };
+        "000000000000000000000050" = {
+            "isa" = "XCRemoteSwiftPackageReference";
+            "repositoryURL" = "https://github.com/weichsel/ZIPFoundation.git";
+            "requirement" = {
+                "kind" = "exactVersion";
+                "version" = "0.9.19";
+            };
+        };
+        "000000000000000000000051" = {
+            "isa" = "XCSwiftPackageProductDependency";
+            "package" = "00000000000000000000004F";
+            "productName" = "IWordDomain";
+        };
+        "000000000000000000000052" = {
+            "isa" = "XCSwiftPackageProductDependency";
+            "package" = "00000000000000000000004F";
+            "productName" = "IWordStorage";
+        };
+        "000000000000000000000053" = {
+            "isa" = "XCSwiftPackageProductDependency";
+            "package" = "000000000000000000000050";
+            "productName" = "ZIPFoundation";
+        };
+        "000000000000000000000054" = {
+            "isa" = "PBXBuildFile";
+            "productRef" = "000000000000000000000051";
+        };
+        "000000000000000000000055" = {
+            "isa" = "PBXBuildFile";
+            "productRef" = "000000000000000000000052";
+        };
+        "000000000000000000000056" = {
+            "isa" = "PBXBuildFile";
+            "productRef" = "000000000000000000000053";
+        };
+        "000000000000000000000057" = {
+            "isa" = "PBXSourcesBuildPhase";
+            "buildActionMask" = "2147483647";
+            "files" = ("000000000000000000000002", "000000000000000000000004", "000000000000000000000006", "000000000000000000000008", "00000000000000000000000A", "00000000000000000000000C", "00000000000000000000000E", "000000000000000000000010", "000000000000000000000012", "000000000000000000000014", "000000000000000000000016", "000000000000000000000018", "00000000000000000000001A", "00000000000000000000001C", "00000000000000000000001E", "000000000000000000000020", "000000000000000000000022", "000000000000000000000024", "000000000000000000000026", "000000000000000000000028", "00000000000000000000002A", "00000000000000000000002C", "00000000000000000000002E", "000000000000000000000030", "000000000000000000000032", "000000000000000000000034", "000000000000000000000036", "000000000000000000000038", "00000000000000000000003A", "00000000000000000000003C", "00000000000000000000003E", "000000000000000000000040", "000000000000000000000042", "000000000000000000000044", "000000000000000000000046");
+            "runOnlyForDeploymentPostprocessing" = "0";
+        };
+        "000000000000000000000058" = {
+            "isa" = "PBXResourcesBuildPhase";
+            "buildActionMask" = "2147483647";
+            "files" = ("000000000000000000000049", "00000000000000000000004A");
+            "runOnlyForDeploymentPostprocessing" = "0";
+        };
+        "000000000000000000000059" = {
+            "isa" = "PBXFrameworksBuildPhase";
+            "buildActionMask" = "2147483647";
+            "files" = ("000000000000000000000054", "000000000000000000000055", "000000000000000000000056");
+            "runOnlyForDeploymentPostprocessing" = "0";
+        };
+        "00000000000000000000005A" = {
+            "isa" = "XCBuildConfiguration";
+            "buildSettings" = {
+                "IPHONEOS_DEPLOYMENT_TARGET" = "15.0";
+                "SWIFT_VERSION" = "5.0";
+                "SDKROOT" = "iphoneos";
+                "CLANG_ENABLE_MODULES" = "YES";
+                "SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+                "ONLY_ACTIVE_ARCH" = "YES";
+                "ENABLE_TESTABILITY" = "YES";
+                "PRODUCT_BUNDLE_IDENTIFIER" = "biz.powerunion.iword";
+                "PRODUCT_NAME" = "$(TARGET_NAME)";
+                "CURRENT_PROJECT_VERSION" = "1";
+                "MARKETING_VERSION" = "1.1.0";
+                "GENERATE_INFOPLIST_FILE" = "YES";
+                "INFOPLIST_FILE" = "IWord/Info.plist";
+                "INFOPLIST_KEY_CFBundleDisplayName" = "iWord";
+                "INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
+                "INFOPLIST_KEY_UIApplicationSceneManifest_Generation" = "YES";
+                "INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone" = "UIInterfaceOrientationPortrait";
+                "TARGETED_DEVICE_FAMILY" = "1";
+                "ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+                "CODE_SIGN_STYLE" = "Automatic";
+                "SWIFT_EMIT_LOC_STRINGS" = "NO";
+                "SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+                "SUPPORTS_MACCATALYST" = "NO";
+                "INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace" = "YES";
+                "INFOPLIST_KEY_UIFileSharingEnabled" = "NO";
+            };
+            "name" = "Debug";
+        };
+        "00000000000000000000005B" = {
+            "isa" = "XCBuildConfiguration";
+            "buildSettings" = {
+                "IPHONEOS_DEPLOYMENT_TARGET" = "15.0";
+                "SWIFT_VERSION" = "5.0";
+                "SDKROOT" = "iphoneos";
+                "CLANG_ENABLE_MODULES" = "YES";
+                "SWIFT_OPTIMIZATION_LEVEL" = "-O";
+                "ONLY_ACTIVE_ARCH" = "NO";
+                "ENABLE_TESTABILITY" = "NO";
+                "PRODUCT_BUNDLE_IDENTIFIER" = "biz.powerunion.iword";
+                "PRODUCT_NAME" = "$(TARGET_NAME)";
+                "CURRENT_PROJECT_VERSION" = "1";
+                "MARKETING_VERSION" = "1.1.0";
+                "GENERATE_INFOPLIST_FILE" = "YES";
+                "INFOPLIST_FILE" = "IWord/Info.plist";
+                "INFOPLIST_KEY_CFBundleDisplayName" = "iWord";
+                "INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
+                "INFOPLIST_KEY_UIApplicationSceneManifest_Generation" = "YES";
+                "INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone" = "UIInterfaceOrientationPortrait";
+                "TARGETED_DEVICE_FAMILY" = "1";
+                "ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+                "CODE_SIGN_STYLE" = "Automatic";
+                "SWIFT_EMIT_LOC_STRINGS" = "NO";
+                "SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+                "SUPPORTS_MACCATALYST" = "NO";
+                "INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace" = "YES";
+                "INFOPLIST_KEY_UIFileSharingEnabled" = "NO";
+            };
+            "name" = "Release";
+        };
+        "00000000000000000000005C" = {
+            "isa" = "XCConfigurationList";
+            "buildConfigurations" = ("00000000000000000000005A", "00000000000000000000005B");
+            "defaultConfigurationIsVisible" = "0";
+            "defaultConfigurationName" = "Release";
+        };
+        "00000000000000000000005D" = {
+            "isa" = "XCBuildConfiguration";
+            "buildSettings" = {
+                "IPHONEOS_DEPLOYMENT_TARGET" = "15.0";
+                "SWIFT_VERSION" = "5.0";
+                "SDKROOT" = "iphoneos";
+                "CLANG_ENABLE_MODULES" = "YES";
+                "SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+                "ONLY_ACTIVE_ARCH" = "YES";
+                "ENABLE_TESTABILITY" = "YES";
+            };
+            "name" = "Debug";
+        };
+        "00000000000000000000005E" = {
+            "isa" = "XCBuildConfiguration";
+            "buildSettings" = {
+                "IPHONEOS_DEPLOYMENT_TARGET" = "15.0";
+                "SWIFT_VERSION" = "5.0";
+                "SDKROOT" = "iphoneos";
+                "CLANG_ENABLE_MODULES" = "YES";
+                "SWIFT_OPTIMIZATION_LEVEL" = "-O";
+                "ONLY_ACTIVE_ARCH" = "NO";
+                "ENABLE_TESTABILITY" = "NO";
+            };
+            "name" = "Release";
+        };
+        "00000000000000000000005F" = {
+            "isa" = "XCConfigurationList";
+            "buildConfigurations" = ("00000000000000000000005D", "00000000000000000000005E");
+            "defaultConfigurationIsVisible" = "0";
+            "defaultConfigurationName" = "Release";
+        };
+        "000000000000000000000060" = {
+            "isa" = "PBXNativeTarget";
+            "buildConfigurationList" = "00000000000000000000005C";
+            "buildPhases" = ("000000000000000000000057", "000000000000000000000058", "000000000000000000000059");
+            "buildRules" = ();
+            "dependencies" = ();
+            "name" = "IWord";
+            "packageProductDependencies" = ("000000000000000000000051", "000000000000000000000052", "000000000000000000000053");
+            "productName" = "IWord";
+            "productReference" = "00000000000000000000004B";
+            "productType" = "com.apple.product-type.application";
+        };
+        "000000000000000000000061" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "OfflineFlowTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000062" = {
+            "isa" = "PBXGroup";
+            "children" = ("000000000000000000000061");
+            "path" = "UITests";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000063" = {
+            "isa" = "PBXFileReference";
+            "explicitFileType" = "wrapper.cfbundle";
+            "path" = "IWordUITests.xctest";
+            "sourceTree" = "BUILT_PRODUCTS_DIR";
+            "includeInIndex" = "0";
+        };
+        "000000000000000000000064" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000061";
+        };
+        "000000000000000000000065" = {
+            "isa" = "PBXSourcesBuildPhase";
+            "buildActionMask" = "2147483647";
+            "files" = ("000000000000000000000064");
+            "runOnlyForDeploymentPostprocessing" = "0";
+        };
+        "000000000000000000000066" = {
+            "isa" = "XCBuildConfiguration";
+            "name" = "Debug";
+            "buildSettings" = {
+                "PRODUCT_BUNDLE_IDENTIFIER" = "biz.powerunion.iword.uitests";
+                "PRODUCT_NAME" = "$(TARGET_NAME)";
+                "IPHONEOS_DEPLOYMENT_TARGET" = "15.0";
+                "SWIFT_VERSION" = "5.0";
+                "SDKROOT" = "iphoneos";
+                "GENERATE_INFOPLIST_FILE" = "YES";
+                "TARGETED_DEVICE_FAMILY" = "1";
+                "TEST_TARGET_NAME" = "IWord";
+                "CODE_SIGN_STYLE" = "Automatic";
+                "ONLY_ACTIVE_ARCH" = "YES";
+            };
+        };
+        "000000000000000000000067" = {
+            "isa" = "XCBuildConfiguration";
+            "name" = "Release";
+            "buildSettings" = {
+                "PRODUCT_BUNDLE_IDENTIFIER" = "biz.powerunion.iword.uitests";
+                "PRODUCT_NAME" = "$(TARGET_NAME)";
+                "IPHONEOS_DEPLOYMENT_TARGET" = "15.0";
+                "SWIFT_VERSION" = "5.0";
+                "SDKROOT" = "iphoneos";
+                "GENERATE_INFOPLIST_FILE" = "YES";
+                "TARGETED_DEVICE_FAMILY" = "1";
+                "TEST_TARGET_NAME" = "IWord";
+                "CODE_SIGN_STYLE" = "Automatic";
+                "ONLY_ACTIVE_ARCH" = "NO";
+            };
+        };
+        "000000000000000000000068" = {
+            "isa" = "XCConfigurationList";
+            "buildConfigurations" = ("000000000000000000000066", "000000000000000000000067");
+            "defaultConfigurationIsVisible" = "0";
+            "defaultConfigurationName" = "Release";
+        };
+        "000000000000000000000069" = {
+            "isa" = "PBXTargetDependency";
+            "target" = "000000000000000000000060";
+        };
+        "00000000000000000000006A" = {
+            "isa" = "PBXNativeTarget";
+            "buildConfigurationList" = "000000000000000000000068";
+            "buildPhases" = ("000000000000000000000065");
+            "buildRules" = ();
+            "dependencies" = ("000000000000000000000069");
+            "name" = "IWordUITests";
+            "productName" = "IWordUITests";
+            "productReference" = "000000000000000000000063";
+            "productType" = "com.apple.product-type.bundle.ui-testing";
+        };
+        "00000000000000000000006B" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AICoachEngineTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000006C" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AICoachPracticeTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000006D" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AICoachScheduleTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000006E" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "AssociationLearningTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000006F" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "BackupArchiveTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000070" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "ContentUpdateTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000071" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "LearningEnhancementTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000072" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "MedleyPlanTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000073" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "MobileBackupClientTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000074" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "PracticeEngineTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000075" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "ReminderPlanTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000076" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "SpokenMeaningTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000077" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "sourcecode.swift";
+            "path" = "StudyReportTests.swift";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000078" = {
+            "isa" = "PBXFileReference";
+            "lastKnownFileType" = "folder";
+            "path" = "Fixtures";
+            "sourceTree" = "<group>";
+        };
+        "000000000000000000000079" = {
+            "isa" = "PBXGroup";
+            "children" = ("00000000000000000000006B", "00000000000000000000006C", "00000000000000000000006D", "00000000000000000000006E", "00000000000000000000006F", "000000000000000000000070", "000000000000000000000071", "000000000000000000000072", "000000000000000000000073", "000000000000000000000074", "000000000000000000000075", "000000000000000000000076", "000000000000000000000077", "000000000000000000000078");
+            "path" = "Tests";
+            "sourceTree" = "<group>";
+        };
+        "00000000000000000000007A" = {
+            "isa" = "PBXFileReference";
+            "explicitFileType" = "wrapper.cfbundle";
+            "path" = "IWordTests.xctest";
+            "sourceTree" = "BUILT_PRODUCTS_DIR";
+            "includeInIndex" = "0";
+        };
+        "00000000000000000000007B" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000006B";
+        };
+        "00000000000000000000007C" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000006C";
+        };
+        "00000000000000000000007D" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000006D";
+        };
+        "00000000000000000000007E" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000006E";
+        };
+        "00000000000000000000007F" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "00000000000000000000006F";
+        };
+        "000000000000000000000080" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000070";
+        };
+        "000000000000000000000081" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000071";
+        };
+        "000000000000000000000082" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000072";
+        };
+        "000000000000000000000083" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000073";
+        };
+        "000000000000000000000084" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000074";
+        };
+        "000000000000000000000085" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000075";
+        };
+        "000000000000000000000086" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000076";
+        };
+        "000000000000000000000087" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000077";
+        };
+        "000000000000000000000088" = {
+            "isa" = "PBXBuildFile";
+            "fileRef" = "000000000000000000000078";
+        };
+        "000000000000000000000089" = {
+            "isa" = "PBXSourcesBuildPhase";
+            "buildActionMask" = "2147483647";
+            "files" = ("00000000000000000000007B", "00000000000000000000007C", "00000000000000000000007D", "00000000000000000000007E", "00000000000000000000007F", "000000000000000000000080", "000000000000000000000081", "000000000000000000000082", "000000000000000000000083", "000000000000000000000084", "000000000000000000000085", "000000000000000000000086", "000000000000000000000087");
+            "runOnlyForDeploymentPostprocessing" = "0";
+        };
+        "00000000000000000000008A" = {
+            "isa" = "PBXResourcesBuildPhase";
+            "buildActionMask" = "2147483647";
+            "files" = ("000000000000000000000088");
+            "runOnlyForDeploymentPostprocessing" = "0";
+        };
+        "00000000000000000000008B" = {
+            "isa" = "XCBuildConfiguration";
+            "name" = "Debug";
+            "buildSettings" = {
+                "PRODUCT_BUNDLE_IDENTIFIER" = "biz.powerunion.iword.tests";
+                "PRODUCT_NAME" = "$(TARGET_NAME)";
+                "IPHONEOS_DEPLOYMENT_TARGET" = "15.0";
+                "SWIFT_VERSION" = "5.0";
+                "SDKROOT" = "iphoneos";
+                "GENERATE_INFOPLIST_FILE" = "YES";
+                "TARGETED_DEVICE_FAMILY" = "1";
+                "CODE_SIGN_STYLE" = "Automatic";
+                "ONLY_ACTIVE_ARCH" = "YES";
+                "TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/IWord.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IWord";
+                "BUNDLE_LOADER" = "$(TEST_HOST)";
+                "SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+            };
+        };
+        "00000000000000000000008C" = {
+            "isa" = "XCBuildConfiguration";
+            "name" = "Release";
+            "buildSettings" = {
+                "PRODUCT_BUNDLE_IDENTIFIER" = "biz.powerunion.iword.tests";
+                "PRODUCT_NAME" = "$(TARGET_NAME)";
+                "IPHONEOS_DEPLOYMENT_TARGET" = "15.0";
+                "SWIFT_VERSION" = "5.0";
+                "SDKROOT" = "iphoneos";
+                "GENERATE_INFOPLIST_FILE" = "YES";
+                "TARGETED_DEVICE_FAMILY" = "1";
+                "CODE_SIGN_STYLE" = "Automatic";
+                "ONLY_ACTIVE_ARCH" = "NO";
+                "TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/IWord.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IWord";
+                "BUNDLE_LOADER" = "$(TEST_HOST)";
+                "SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
+            };
+        };
+        "00000000000000000000008D" = {
+            "isa" = "XCConfigurationList";
+            "buildConfigurations" = ("00000000000000000000008B", "00000000000000000000008C");
+            "defaultConfigurationIsVisible" = "0";
+            "defaultConfigurationName" = "Release";
+        };
+        "00000000000000000000008E" = {
+            "isa" = "PBXTargetDependency";
+            "target" = "000000000000000000000060";
+        };
+        "00000000000000000000008F" = {
+            "isa" = "PBXNativeTarget";
+            "buildConfigurationList" = "00000000000000000000008D";
+            "buildPhases" = ("000000000000000000000089", "00000000000000000000008A");
+            "buildRules" = ();
+            "dependencies" = ("00000000000000000000008E");
+            "name" = "IWordTests";
+            "productName" = "IWordTests";
+            "productReference" = "00000000000000000000007A";
+            "productType" = "com.apple.product-type.bundle.unit-test";
+        };
+        "000000000000000000000090" = {
+            "isa" = "PBXProject";
+            "attributes" = {
+                "LastUpgradeCheck" = "1640";
+                "TargetAttributes" = {
+                    "00000000000000000000006A" = {
+                        "TestTargetID" = "000000000000000000000060";
+                    };
+                    "00000000000000000000008F" = {
+                        "TestTargetID" = "000000000000000000000060";
+                    };
+                };
+            };
+            "buildConfigurationList" = "00000000000000000000005F";
+            "compatibilityVersion" = "Xcode 14.0";
+            "developmentRegion" = "zh_CN";
+            "hasScannedForEncodings" = "0";
+            "knownRegions" = ("en", "Base", "zh_CN");
+            "mainGroup" = "00000000000000000000004E";
+            "productRefGroup" = "00000000000000000000004D";
+            "projectDirPath" = "";
+            "projectRoot" = "";
+            "targets" = ("000000000000000000000060", "00000000000000000000006A", "00000000000000000000008F");
+            "packageReferences" = ("00000000000000000000004F", "000000000000000000000050");
+        };
+    };
+    "rootObject" = "000000000000000000000090";
+}

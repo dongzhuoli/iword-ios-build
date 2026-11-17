@@ -1,0 +1,84 @@
+name: Build iWord app
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: iword-formal-ios
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 35
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Portable checks and core tests
+        run: |
+          set -euo pipefail
+          python3 iword-ios/scripts/check_source.py
+          xcodebuild -version
+          swift test --package-path iword-ios/Core --parallel
+      - name: iPhone simulator content and learning unit tests
+        run: |
+          set -euo pipefail
+          mkdir -p release
+          xcodebuild -project iword-ios/IWord.xcodeproj -scheme IWord \
+            -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -derivedDataPath build-simulator -resultBundlePath release/NativeTests.xcresult \
+            -parallel-testing-enabled NO -maximum-test-execution-time-allowance 300 \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO -only-testing:IWordTests test
+      - name: iPhone simulator interaction tests
+        run: |
+          set -euo pipefail
+          xcodebuild -project iword-ios/IWord.xcodeproj -scheme IWord \
+            -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -derivedDataPath build-simulator -resultBundlePath release/OfflineFlow.xcresult \
+            -parallel-testing-enabled NO -maximum-test-execution-time-allowance 300 \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO -only-testing:IWordUITests test
+      - name: Export synthetic native backup fixture
+        run: |
+          fixture=$(find "$HOME/Library/Developer/CoreSimulator/Devices" -name ci-backup-fixture.zip -type f -print -quit)
+          test -n "$fixture"
+          cp "$fixture" release/native-backup-fixture.zip
+      - name: Build unsigned iOS15 device app
+        run: |
+          set -euo pipefail
+          xcodebuild -project iword-ios/IWord.xcodeproj -scheme IWord \
+            -configuration Release -sdk iphoneos -destination 'generic/platform=iOS' \
+            -derivedDataPath build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO \
+            CURRENT_PROJECT_VERSION="$((100 + GITHUB_RUN_NUMBER))" build
+      - name: Package unsigned app
+        run: |
+          set -euo pipefail
+          mkdir -p release/Payload
+          ditto build/Build/Products/Release-iphoneos/IWord.app release/Payload/IWord.app
+          python3 -c "import plistlib; p=plistlib.load(open('release/Payload/IWord.app/Info.plist','rb')); assert p['MinimumOSVersion']=='15.0'; assert p['CFBundleIdentifier']=='biz.powerunion.iword'"
+          lipo release/Payload/IWord.app/IWord -verify_arch arm64
+          cp iword-ios/IWord.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved release/Package.resolved
+          cd release
+          ditto -c -k --keepParent Payload iWord-offline-unsigned.ipa
+          shasum -a 256 iWord-offline-unsigned.ipa > SHA256SUMS.txt
+          printf '%s\n' 'Unsigned iOS15+ offline learning app. Sign locally with Sideloadly. Never upload Apple ID passwords or certificates. Includes only five synthetic demo entries and generated test tones; no textbook audio. P2 includes manual content updates. Includes seven-day reports, complete backup/restore, and manual server backup. Update the Spring Boot server before syncing. Real-phone restore acceptance remains required.' > READ-ME-FIRST.txt
+      - name: Export native screenshots
+        if: always()
+        continue-on-error: true
+        run: xcrun xcresulttool export attachments --path release/OfflineFlow.xcresult --output-path release/screenshots
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: iWord-offline-${{ github.run_number }}
+          path: |
+            release/iWord-offline-unsigned.ipa
+            release/SHA256SUMS.txt
+            release/READ-ME-FIRST.txt
+            release/Package.resolved
+            release/native-backup-fixture.zip
+            release/NativeTests.xcresult
+            release/OfflineFlow.xcresult
+            release/screenshots
+          if-no-files-found: warn
+          retention-days: 7
